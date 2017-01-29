@@ -1,3 +1,5 @@
 /target/
 *.iml
 .idea
+doc
+swagger-codegen-cli.jar
