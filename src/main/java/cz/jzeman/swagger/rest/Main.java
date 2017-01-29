@@ -29,6 +29,6 @@ public class Main {
             notes = "Plus operation returns result of plus operation. For example 2 + 3 = 5",
             response = PlusResult.class)
     public PlusResult plus(Plus msg) throws Exception{
-        return new PlusResult(msg.getOperatorA(), msg.getOperatorB());
+        return new PlusResult(msg);
     }
 }

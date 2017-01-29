@@ -9,8 +9,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class PlusResult extends Plus {
     final public int result;
 
-    public PlusResult(int operatorA, int operatorB) {
+    public PlusResult(final int operatorA, final    int operatorB) {
         super(operatorA, operatorB);
+        this.result = operatorA + operatorB;
+    }
+
+    public PlusResult(final Plus plus) {
+        super(plus);
         this.result = operatorA + operatorB;
     }
 

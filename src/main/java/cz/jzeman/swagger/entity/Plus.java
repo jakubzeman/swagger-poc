@@ -10,9 +10,14 @@ public class Plus {
     final public int operatorA;
     final public int operatorB;
 
-    public Plus(int operatorA, int operatorB) {
+    public Plus(final int operatorA, final int operatorB) {
         this.operatorA = operatorA;
         this.operatorB = operatorB;
+    }
+
+    public Plus(final Plus plus) {
+        this.operatorA = plus.getOperatorA();
+        this.operatorB = plus.getOperatorB();
     }
 
     public Plus() {
